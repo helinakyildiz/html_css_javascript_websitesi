@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/7ab486c0f3.js" crossorigin="anonymous"></script>
+    <!--font awesomeden gerekli ikonların eklenebilmesi için lazım olan kodlar-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ba-V Yapı projelerimiz</title>
+
+    <link rel="shortcut icon" type="ba-v yapı" href="ba-v.jpg"><!--logonun arama çubuğunda görünmesi-->
+
+<!--google font dan istediğimiz yazı stilini kullanmak için lazım olan kodlar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css"><!--css sayfası ile bağlantı--> 
+    <script src="index.js"></script>
+</head>
+<body>
+    <section id="menu"><!-- menu alanının oluşturulması-->
+        <div id="logo">
+            <a href="web1.html"><!--logo için bağlantı oluşturulması-->
+                <img src="ba-v.png" alt="ba-v yapı">
+            </a>
+        </div><!--logonun eklenmesi-->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="nav">
+            <a href="web1.html"><i class="fa-solid fa-house ikon"></i>ANASAYFA</a>
+            <div class="hakkimizda">
+                <span><i class="fa-solid fa-clipboard ikon"></i>HAKKIMIZDA</span>
+                <div class="alt-menu">
+                    <a href="hakkimizda.html">Hakkımızda</a>
+                    <a href="vizyon.html">Vizyonumuz ve Misyonumuz</a>
+                </div>
+            </div>
+            <a href="yonetim.html"><i class="fa-solid fa-user-group ikon"></i>YÖNETİM</a>
+            <a href="projelerimiz.html"><i class="fa-solid fa-building ikon"></i>PROJELERİMİZ</a>
+            <a href="iletisim.html"><i class="fa-solid fa-phone ikon"></i>İLETİŞİM</a>
+        </nav>
+    </section>
+
+    <!-- Slider alanı -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide"><img src="ins15.jpg" alt="Proje 1"></div>
+            <div class="slide"><img src="ins16.jpg" alt="Proje 2"></div>
+            <div class="slide"><img src="ins2.jpg" alt="Proje 3"></div>
+            <div class="slide"><img src="ins4.jpg" alt="Proje 4"></div>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </section>
+
+    <!--projeler alanı-->
+    <section class="projeler">
+        <h1>Projelerimiz</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="ins15.jpg" alt="proje1">
+                    <h3>Proje1</h3>
+
+                </div>
+                <div class="box-bottom">
+                    <a href="proje1.html" class="btn-proje">Proje Detayları</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="ins16.jpg" alt="proje1">
+                    <h3>Proje2</h3>
+
+                </div>
+                <div class="box-bottom">
+                    <a href="proje2.html" class="btn-proje">Proje Detayları</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="ins2.jpg" alt="proje1">
+                    <h3>Proje3</h3>
+
+                </div>
+                <div class="box-bottom">
+                    <a href="proje3.html" class="btn-proje">Proje Detayları</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="ins4.jpg" alt="proje1">
+                    <h3>Proje4</h3>
+
+                </div>
+                <div class="box-bottom">
+                    <a href="proje4.html" class="btn-proje">Proje Detayları</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+          
+<!--footer alanı-->
+<section class="footer">
+   
+    <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-youtube"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+
+    </div>
+
+    <div class="links">
+        <a href="web1.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="vizyon.html">Vizyonumuz ve Misyonumuz</a>
+        <a href="yonetim.html">Yönetim</a>
+        <a href="projelerimiz.html">Projelerimiz</a>
+
+    </div>
+
+    <div class="inner">
+        
+        <div class="helpful_links">
+            <div class="inner_list">
+                <div class="inner_title">
+                <a href="iletisim.html">İletişim</a>
+                </div>
+                <ul>
+                    <li><a href="#">Adalet Mah. Manas Bulvarı No:39 İç kapı 3408 Folkart Tower B Kule
+                            Bayraklı/İzmir</a></li>
+                    <li><a href="tel:0 532 408 53 94">0532 200 0834 </a></li>
+                    <li><a href="tel:0 532 408 53 94">0532 471 5955</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        created by <span>Helin Akyıldız</span> | all rigths reserved
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+
+        hamburger.addEventListener('click', function() {
+            nav.classList.toggle('show');
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

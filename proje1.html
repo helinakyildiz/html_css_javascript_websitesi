@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <script src="https://kit.fontawesome.com/7ab486c0f3.js" crossorigin="anonymous"></script>
+    <!--font awesomeden gerekli ikonların eklenebilmesi için lazım olan kodlar-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ba-V Yapı Projeler</title>
+  
+    <link rel="shortcut icon" type="ba-v yapı" href="ba-v.jpg"><!--logonun arama çubuğunda görünmesi-->
+  
+    <!--google font dan istediğimiz yazı stilini kullanmak için lazım olan kodlar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .project-container {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .project-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    .project-images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .project-images img {
+        max-width: 30%;
+        height: auto;
+        border-radius: 5px;
+        flex: 1 1 calc(33.333% - 10px);
+    }
+    
+    .project-description {
+        font-size: 1em;
+        color: #333;
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .project-images img {
+            flex: 1 1 calc(50% - 10px); /* Ekran genişliği 768px'den küçük olduğunda 2 sütun yap */
+        }
+    
+        .project-title {
+            font-size: 1.5em; /* Başlık boyutunu küçült */
+        }
+    
+        .project-description {
+            font-size: 0.9em; /* Metin boyutunu küçült */
+        }
+    
+        /* Hamburger menü */
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            top: 20px; /* Yukarıdan 20px mesafede */
+            right: 20px; /* Sağdan 20px mesafede */
+            color: #333; /* Yazı rengini belirgin yap */
+            z-index: 999; /* Diğer içeriklerden üstte gözüksün */
+        }
+    
+        nav#nav {
+            display: none;
+            flex-direction: column;
+            align-items: flex-end; /* Menü öğelerini sağa hizala */
+            width: 200px; /* Menünün genişliğini ayarla */
+            position: absolute;
+            top: 60px; /* Yukarıdan 60px mesafede */
+            left: 20px; /* Sağdan 20px mesafede */
+            background-color: rgba(255, 255, 255, 0.9); /* Arkaplanı hafifçe opak yap */
+            border-radius: 10px; /* Kenarları yumuşat */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif bir gölgelendirme ekle */
+            z-index: 1; /* Diğer içeriklerin üzerinde göster */
+        }
+    
+        nav#nav.show {
+            display: flex;
+        }
+        nav#nav a,
+            nav#nav .hakkimizda > span {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 5px 0;
+                color: #333;
+                text-decoration: none;
+            }
+
+            .hakkimizda {
+                width: 100%;
+                position: relative;
+            }
+
+            .hakkimizda > span {
+                cursor: pointer;
+            }
+
+            .alt-menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                background-color: #333;
+                border-radius: 10px;
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+
+            .alt-menu a {
+                display: block;
+                width: 100%;
+                padding: 5px 0;
+                color: white !important;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            .hakkimizda:hover .alt-menu,
+            .alt-menu:hover {
+                display: flex;
+            }
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <section id="menu"><!-- menu alanının oluşturulması-->
+        <div id="logo">
+            <a href="web1.html"><!--logo için bağlantı oluşturulması-->
+                <img src="ba-v.png" alt="ba-v yapı">
+            </a>
+        </div><!--logonun eklenmesi-->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="nav">
+            <a href="web1.html"><i class="fa-solid fa-house ikon"></i>ANASAYFA</a>
+            <div class="hakkimizda">
+                <span><i class="fa-solid fa-clipboard ikon"></i>HAKKIMIZDA</span>
+                <div class="alt-menu">
+                    <a href="hakkimizda.html">Hakkımızda</a>
+                    <a href="vizyon.html">Vizyonumuz ve Misyonumuz</a>
+                </div>
+            </div>
+            <a href="yonetim.html"><i class="fa-solid fa-user-group ikon"></i>YÖNETİM</a>
+            <a href="projelerimiz.html"><i class="fa-solid fa-building ikon"></i>PROJELERİMİZ</a>
+            <a href="iletisim.html"><i class="fa-solid fa-phone ikon"></i>İLETİŞİM</a>
+        </nav>
+    </section>
+
+    <div class="project-container">
+        <h1 class="project-title">Proje İsmi</h1>
+        <div class="project-images">
+            <img src="ins1.jpg" alt="Proje Görseli 1">
+            <img src="ins2.jpg" alt="Proje Görseli 2">
+            <img src="ins3.jpg" alt="Proje Görseli 3">
+        </div>
+        <div class="project-description">
+            <p>Bu bölümde proje açıklaması yer alacak. Proje detayları, özellikleri ve diğer önemli bilgiler bu alanda bulunacak.</p>
+        </div>
+    </div>
+
+    <!--footer alanı-->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="search">
+            <button type="submit" class="btn btn-primary">search</button>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="links">
+            <a href="web1.html">Anasayfa</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="vizyon.html">Vizyonumuz ve Misyonumuz</a>
+            <a href="yonetim.html">Yönetim</a>
+            <a href="projelerimiz.html">Projelerimiz</a>
+        </div>
+
+        <div class="inner">
+            <div class="helpful_links">
+                <div class="inner_list">
+                    <div class="inner_title">
+                        <a href="iletisim.html">İletişim</a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Adalet Mah. Manas Bulvarı No:39 İç kapı 3408 Folkart Tower B Kule Bayraklı/İzmir</a></li>
+                        <li><a href="tel:0 532 408 53 94">0532 200 0834 </a></li>
+                        <li><a href="tel:0 532 408 53 94">0532 471 5955</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            created by <span>Helin Akyıldız</span> | all rigths reserved
+        </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const hamburger = document.getElementById('hamburger');
+          const nav = document.getElementById('nav');
+  
+          hamburger.addEventListener('click', function() {
+              nav.classList.toggle('show');
+          });
+      });
+  </script>
+</body>
+</html>

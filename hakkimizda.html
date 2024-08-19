@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/7ab486c0f3.js" crossorigin="anonymous"></script>
+    <!--font awesomeden gerekli ikonların eklenebilmesi için lazım olan kodlar-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ba-V Yapı hakkımızda</title>
+
+    <link rel="shortcut icon" type="ba-v yapı" href="ba-v.jpg"><!--logonun arama çubuğunda görünmesi-->
+
+<!--google font dan istediğimiz yazı stilini kullanmak için lazım olan kodlar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css"><!--css sayfası ile bağlantı--> 
+    
+
+    <style>
+        .yatay {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Satır taşmalarını önlemek için flex-wrap ekledim */
+        }
+    
+        .altbolum {
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            vertical-align: middle;
+            gap: 20px;
+        }
+    
+        .resim {
+            width: 100%;
+            max-width: 250px;
+            height: auto; /* Resimlerin oranlarını koruyarak yeniden boyutlanmasını sağlar */
+        }
+    
+        .metin {
+            height: auto; /* Metin yüksekliğini içeriğe göre otomatik ayarlamak için */
+            padding: 3px;
+            margin-right: 3px;
+        }
+    
+        /* Mobil cihazlar için */
+        @media (max-width: 768px) {
+            .altbolum {
+                width: 100%; /* Alt bölümleri tam genişlikte olacak şekilde ayarladım */
+                height: auto; /* Yüksekliği içeriğe göre ayarladım */
+            }
+            
+            .yatay {
+                justify-content: center; /* Yatayda ortalanması için */
+            }
+    
+            .resim {
+                width: 80%;
+                max-width: none; /* Maksimum genişlik sınırını kaldırdım */
+            }
+    
+            .metin {
+                margin-right: 0; /* Sağ boşluğu kaldırdım */
+            }
+        }
+    
+        /* Tabletler için */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .altbolum {
+                width: 45%; /* Alt bölümleri daha küçük yaparak iki yan yana gelmelerini sağladım */
+                height: auto; /* Yüksekliği içeriğe göre ayarladım */
+            }
+    
+            .resim {
+                width: 100%;
+                max-width: none; /* Maksimum genişlik sınırını kaldırdım */
+            }
+    
+            .metin {
+                margin-right: 0; /* Sağ boşluğu kaldırdım */
+            }
+       
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <section id="menu"><!-- menu alanının oluşturulması-->
+        <div id="logo">
+            <a href="web1.html"><!--logo için bağlantı oluşturulması-->
+                <img src="ba-v.png" alt="ba-v yapı">
+            </a>
+        </div><!--logonun eklenmesi-->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="nav">
+            <a href="web1.html"><i class="fa-solid fa-house ikon"></i>ANASAYFA</a>
+            <div class="hakkimizda">
+                <span><i class="fa-solid fa-clipboard ikon"></i>HAKKIMIZDA</span>
+                <div class="alt-menu">
+                    <a href="hakkimizda.html">Hakkımızda</a>
+                    <a href="vizyon.html">Vizyonumuz ve Misyonumuz</a>
+                </div>
+            </div>
+            <a href="yonetim.html"><i class="fa-solid fa-user-group ikon"></i>YÖNETİM</a>
+            <a href="projelerimiz.html"><i class="fa-solid fa-building ikon"></i>PROJELERİMİZ</a>
+            <a href="iletisim.html"><i class="fa-solid fa-phone ikon"></i>İLETİŞİM</a>
+        </nav>
+    </section>
+
+
+        </div>
+        <section class="about">
+            <h1 class="heading">Hakkımızda</h1>
+            <div class="row">
+                <div class="image">
+                    <img src="hakkımızda.jpg" alt="hakkımızda">
+                </div>
+                <div class="content">
+                    <p>
+                        Hoş Geldiniz!
+
+                        BA-V Yapı, inşaat sektöründe köklü bir geçmişe sahip, yenilikçi ve güvenilir bir firma olarak faaliyet göstermektedir. Müşteri memnuniyetini en üst seviyede tutarak, her projede kaliteli ve benzersiz çözümler sunmayı amaç edinmiş bir ekibiz.
+                        
+                        Deneyimli mühendislerimiz, mimarlarımız ve ustalarımızla birlikte, her bir proje için özel olarak tasarlanmış çözümler üretiyoruz. Teknolojiye ve sektördeki en son gelişmelere olan bağlılığımız sayesinde, projelerimizde sürekli olarak yenilikçi yaklaşımlar benimsiyor ve en iyi sonuçları elde etmek için çalışıyoruz.
+                        
+                        BA-V Yapı olarak, sadece binalar inşa etmiyor, aynı zamanda insanların hayallerini gerçeğe dönüştürüyoruz. Her projeye duyduğumuz tutku ve özen, müşterilerimizin beklentilerini aşmamızı sağlıyor. Bizim için önemli olan sadece inşa ettiğimiz binalar değil, aynı zamanda insanların bu binalarda yaşayacakları deneyimi unutulmaz kılmaktır.
+                        
+                        Sürdürülebilirlik, kalite ve güvenilirlik ilkelerini benimseyen BA-V Yapı, her zaman çevreye duyarlı ve toplumsal sorumluluk bilinciyle hareket eder. İnşaat sektöründe öncü bir marka olarak, sadece bugünü değil, geleceği de şekillendirmeye odaklanıyoruz.
+                        
+                        Bizimle çalışarak, hayallerinizi gerçeğe dönüştürmek için doğru adımı attınız. BA-V Yapı olarak, sizlere en iyi hizmeti sunmak için buradayız.
+                        
+                        Teşekkür ederiz.
+                    </p>
+    
+                </div>
+            </div>
+        </section>
+
+        <!--vizyon-misyon-->
+        
+    <div class="yatay">
+        
+        <div class="altbolum">
+            <h2>Vizyonumuz</h2> <br>
+            <img class="resim" src="vizyon.png" alt="">
+            <p class="metin"> "BA-V Yapı olarak, inşaat sektöründe öncü bir marka olmayı hedefliyoruz. Geleceğin
+                ihtiyaçlarına yönelik
+                sürdürülebilir çözümler üreterek, sektördeki lider konumumuzu güçlendirmeyi ve uluslararası alanda
+                tanınan bir marka olmayı amaçlıyoruz. Mimari mükemmelliği ve sürdürülebilirlik ilkelerini bir araya
+                getirerek, dünya çapında tanınan projelere imza atmak için sürekli olarak yenilikçi yaklaşımlar
+                benimseyeceğiz."</p>
+        </div>
+
+        <div class="altbolum">
+            <h2>Misyonumuz</h2> <br>
+            <img class="resim" src="misyon.png" alt="">
+            <p class="metin"> "BA-V Yapı olarak, müşterilerimize kaliteli ve güvenilir inşaat hizmetleri sunarak çevreye
+                duyarlı ve sürdürülebilir projelere odaklanıyoruz. Müşteri memnuniyetini her zaman ön planda tutarak,
+                uzman ekibimizle birlikte kalite standartlarını koruyor ve sürekli olarak geliştiriyoruz. Topluma ve
+                çevreye değer katmayı hedefleyen yaklaşımımızla, öncü bir marka olmayı amaçlıyoruz."
+            </p>
+        </div>
+
+        <div class="altbolum">
+            <h2>Başarı Faktörleri</h2> <br>
+            <img class="resim" src="basarılarımız.png" alt="">
+            <p class="metin">"BA-V Yapı'nın başarısının arkasında müşteri odaklı yaklaşım, uzman kadro, kalite
+                standartlarına bağlılık, sürdürülebilirlik ve çevreye duyarlılık, sürekli iyileştirme ve inovasyon gibi
+                temel unsurlar yatmaktadır. Müşteri memnuniyetini en üst düzeyde tutarak, deneyimli ekibimizle birlikte
+                her projede kalite ve güvenilirlik standartlarını koruyor ve sürekli olarak geliştiriyoruz."
+            </p>
+        </div>
+
+
+    </div>
+
+
+          
+<!--footer alanı-->
+    <section class="footer">
+       
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+
+        </div>
+
+        <div class="links">
+            <a href="web1.html">Anasayfa</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="vizyon.html">Vizyonumuz ve Misyonumuz</a>
+            <a href="yonetim.html">Yönetim</a>
+            <a href="projelerimiz.html">Projelerimiz</a>
+
+        </div>
+
+        <div class="inner">
+            
+            <div class="helpful_links">
+                <div class="inner_list">
+                    <div class="inner_title">
+                    <a href="iletisim.html">İletişim</a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Adalet Mah. Manas Bulvarı No:39 İç kapı 3408 Folkart Tower B Kule
+                                Bayraklı/İzmir</a></li>
+                        <li><a href="tel:0 532 408 53 94">0532 200 0834 </a></li>
+                        <li><a href="tel:0 532 408 53 94">0532 471 5955</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            created by <span>Helin Akyıldız</span> | all rigths reserved
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.getElementById('nav');
+    
+            hamburger.addEventListener('click', function() {
+                nav.classList.toggle('show');
+            });
+        });
+    </script>
+
+
+</body>
+</html>
