@@ -13,7 +13,7 @@ Bu proje, modern bir inşaat firması için tasarlanmış, yalnızca **HTML**, *
 ## 🚀 Kurulum ve Kullanım
 
 1. Proje klasörünü bilgisayarına indir.
-2. `index.html` dosyasını bir tarayıcıda aç.
+2. `web.html` dosyasını bir tarayıcıda aç.
 3. Tüm dosyalar HTML, CSS ve JS ile statik olarak çalıştığı için ekstra kurulum gerekmez.
 
 ## 📁 Dosya Yapısı
